@@ -7,28 +7,32 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane prefHeight="550" prefWidth="750" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.example.gpa__calculator.gpa_resultController">
+<BorderPane prefHeight="550" prefWidth="900" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpa__calculator.gpa_resultController">
 
     <top>
         <VBox alignment="CENTER">
             <Label style="-fx-font-size: 34; -fx-padding: 20;" styleClass="header-label" text="🏆 GPA Achievement Certificate 🏆" />
-            <Separator prefWidth="600" />
+            <Separator prefWidth="700" />
         </VBox>
     </top>
 
     <center>
-        <VBox alignment="CENTER" spacing="15">
-
+        <VBox alignment="CENTER" spacing="15" style="-fx-padding: 10;">
             <Label style="-fx-font-size: 22;" styleClass="sub-title" text="Course Summary" />
 
-            <TableView fx:id="courseTable" prefHeight="350" prefWidth="650">
-                <columns>
-                    <TableColumn fx:id="colName" prefWidth="250" text="Course Name" />
-                    <TableColumn fx:id="colCredit" prefWidth="250.0" text="Credits" />
-                    <TableColumn fx:id="colGrade" minWidth="15.0" prefWidth="250.0" text="Grade" />
-                </columns>
-            </TableView>
+            <TableView fx:id="courseTable" prefHeight="350" prefWidth="850">
 
+                <columns>
+                    <TableColumn fx:id="colName" prefWidth="160.0" text="Course Name" />
+                    <TableColumn fx:id="colCode" prefWidth="120" text="Course Code" />
+                    <TableColumn fx:id="colTeacher1" prefWidth="130" text="Teacher 1" />
+                    <TableColumn fx:id="colTeacher2" prefWidth="130" text="Teacher 2" />
+                    <TableColumn fx:id="colCredit" prefWidth="110.0" text="Credit" />
+                    <TableColumn fx:id="colGrade" prefWidth="100.0" text="Grade" />
+                    <TableColumn fx:id="colObtained" prefWidth="130" text="Obtained Credit" />
+                </columns>
+
+            </TableView>
         </VBox>
     </center>
 

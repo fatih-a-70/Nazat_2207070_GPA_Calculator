@@ -1,85 +1,43 @@
-
 .root {
-    -fx-background-color: linear-gradient(to bottom right,
-    #f6f1ff,
-    #e8f6ff,
-    #f2ffea
-    );
+    -fx-background-color: #f7f2ff;
 }
-
 
 .header-label {
-    -fx-text-fill: #5d5d7a;
+    -fx-text-fill: #4c2a85;
     -fx-font-weight: bold;
-    -fx-effect: dropshadow(gaussian, rgba(200, 200, 255, 0.5), 10, 0.3, 0, 0);
 }
-
 
 .sub-title {
-    -fx-text-fill: #6f7fa1;
-    -fx-font-weight: bold;
+    -fx-text-fill: #3c4ca3;
 }
 
+.gpa-big {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d50a8;
+}
 
 .panel {
-    -fx-background-color: rgba(255, 255, 255, 0.6);
-    -fx-background-radius: 12;
+    -fx-background-color: #ffffff99;
     -fx-padding: 15;
-    -fx-border-color: rgba(180, 180, 255, 0.5);
-    -fx-border-radius: 12;
-}
-
-
-.button {
-    -fx-background-color: linear-gradient(to right,
-    #dfe6ff,
-    #f1ddff
-    );
-    -fx-text-fill: #535353;
-    -fx-font-size: 15px;
-    -fx-font-weight: bold;
-    -fx-padding: 8px 20px;
-    -fx-background-radius: 12;
-
-    -fx-effect: dropshadow(gaussian, rgba(180,180,255,0.35), 8, 0.5, 0, 0);
-}
-.button:hover {
-    -fx-background-color: linear-gradient(to right,
-    #e8edff,
-    #f6e7ff
-    );
-}
-
-
-.table-view {
-    -fx-background-color: transparent;
-    -fx-border-color: rgba(150, 150, 255, 0.4);
-    -fx-border-radius: 10;
     -fx-background-radius: 10;
 }
 
-.table-view .column-header-background {
-    -fx-background-color: #f4f0ff;
+.table-view {
+    -fx-border-color: #c8c8ff;
+    -fx-border-width: 1;
+    -fx-background-color: #ffffffcc;
+    -fx-table-cell-border-color: #ddddff;
 }
 
-.table-column {
-    -fx-text-fill: #6b6b6b;
-    -fx-alignment: CENTER;
-}
-
-.table-row-cell {
-    -fx-background-color: rgba(255,255,255,0.6);
-    -fx-text-fill: #4f4f4f;
-}
-.table-row-cell:selected {
-    -fx-background-color: #e1f0ff;
-    -fx-text-fill: #404040;
-}
-
-
-.gpa-big {
-    -fx-font-size: 45px;
+.table-column-header {
+    -fx-background-color: #eae6ff;
     -fx-font-weight: bold;
-    -fx-text-fill: #6a7adb;
-    -fx-effect: dropshadow(gaussian, rgba(180,180,255,0.5), 15, 0.5, 0, 0);
+    -fx-text-fill: #333366;
+}
+
+.table-row-cell, .table-cell {
+    -fx-border-color: #e0e0ff;
+    -fx-border-width: 0.5;
+    -fx-background-color: #ffffff88;
 }

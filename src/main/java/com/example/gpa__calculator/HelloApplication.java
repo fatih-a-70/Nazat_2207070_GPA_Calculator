@@ -11,7 +11,8 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-         FXMLLoader fxmlLoader = new FXMLLoader(
+        // Correct absolute path inside resources
+        FXMLLoader fxmlLoader = new FXMLLoader(
                 HelloApplication.class.getResource("/com/example/gpa__calculator/hello-view.fxml")
         );
 
