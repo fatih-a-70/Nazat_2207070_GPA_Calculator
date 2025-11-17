@@ -1,0 +1,19 @@
+<<<GPA Calculator Application>>>
+
+This project is a simple JavaFX-based GPA Calculator designed to help students enter course information and instantly compute their GPA. The application allows users to type in course details such as the course name, course code, credit hours, teachers, and grade. Once the information is added, the GPA is calculated automatically and displayed along with a full summary of all entered courses. The interface is built using JavaFX with FXML, and the visuals are styled through a lightweight CSS theme. The layout is intentionally clean, pastel-colored, and user-friendly.
+
+The project is built with Java and JavaFX, and it runs smoothly inside IntelliJ IDEA. To use it, clone the repository from GitHub, open it in IntelliJ, configure JavaFX if needed, and run the main application file. The project folder includes the Java controllers, the FXML views, and the CSS styling file, which all work together to create a simple and readable structure.
+
+
+<<<Project Structure>>>
+src/
+├─ main/
+   ├─ java/
+   │   └─ com.example.gpa_calculator/
+   │        ├─ Main.java
+   │        ├─ course_entryController.java
+   │        ├─ gpa_resultController.java
+   ├─ resources/
+       ├─ course_entry.fxml
+       ├─ gpa_result.fxml
+       ├─ style.css
