@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.gpa__calculator.course_entryController"
+            prefWidth="650" prefHeight="480"
+            stylesheets="@style.css">
+
+    <top>
+        <Label text="Course Entry Form"
+               styleClass="header-label"
+               style="-fx-font-size: 28; -fx-padding: 20;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <GridPane hgap="10" vgap="12" styleClass="panel">
+
+            <Label text="Total Credit Required:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="totalCreditField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Course Name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="courseNameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Course Code:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="courseCodeField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Credit:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="creditField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Teacher 1:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="teacher1Field" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+            <Label text="Teacher 2:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="teacher2Field" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+            <Label text="Grade:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <ComboBox fx:id="gradeComboBox" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+            <Label fx:id="creditLabel"
+                   text="Credits Added: 0"
+                   GridPane.rowIndex="7" GridPane.columnIndex="1"
+                   styleClass="sub-title"/>
+
+        </GridPane>
+    </center>
+
+    <bottom>
+        <HBox spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+            <Button text="Add Course" onAction="#addCourse"/>
+            <Button fx:id="calcButton" text="Calculate GPA"
+                    disable="true"
+                    onAction="#calculateGPA"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
